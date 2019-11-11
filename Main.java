@@ -8,12 +8,12 @@ public class Main{
         int e_vector;
         int e_real;
         int eleccion;
-        System.out.println("----Calculadora----\nIngresa la calculadora a utilizar\n1)Calculadora racional\n2)Calcularoda vector\n3)Calculadora reales");
+        System.out.println("----Calculadora----\nCalculadora a utilizar\n1)Calculadora Racional\n2)Calcularoda de Vectores\n3)Calculadora Reales");
         eleccion = entrada.nextInt();
-        if (eleccion==1){
+        if (eleccion==1){   //operaciones de Racionales
             System.out.println("Operacion a realizar\n1)Suma\n2)Resta\n3)multipicaion\n4)Divicion");
             e_racional=entrada.nextInt();
-            switch (e_racional){
+            switch (e_racional){  //opciones de opeaciones en racionales
                 case 1: r.suma();
                     break;
                 case 2: r.resta();
@@ -26,7 +26,7 @@ public class Main{
                     break;
             }
         } 
-        if (eleccion==2){
+        if (eleccion==2){   //operaciones de Vectores
             Vectores v = new Vectores();
             System.out.println("Ingresa el tamaño del los vectores:");
             v.setN(entrada.nextInt());
@@ -34,7 +34,7 @@ public class Main{
             v.setB();
             System.out.println("Operacion a realizar\n1)Suma\n2)Resta\n3)multipicaion\n4)Divicion");
             e_vector=entrada.nextInt();
-            switch (e_vector){
+            switch (e_vector){  //opciones de operacion en vectores
                 case 1: v.suma();
                         v.mostrarResultado();
                     break;
@@ -51,7 +51,7 @@ public class Main{
                     break;
             }
         }
-        if (eleccion==3){
+        if (eleccion==3){   //operaciones de Reales
             Reales real = new Reales();
             System.out.println("Ingresa el primer valor:");
             real.setA(entrada.nextDouble());
@@ -59,7 +59,7 @@ public class Main{
             real.setB(entrada.nextDouble());
             System.out.println("Operacion a realzar:\n1)Suma\n2)Resta\n3)Multiplicion\n4)Divicion");
             e_real=entrada.nextInt();
-            switch (e_real) {
+            switch (e_real) {   //Opciones de opeacion en Reales
                 case 1: real.suma();
                         System.out.println(real.getC());
                     break;

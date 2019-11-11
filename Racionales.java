@@ -75,11 +75,11 @@ public class Racionales implements Calculadora {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingresa el numerador y denominador de a");
         a.setNum(entrada.nextInt());
-        System.out.println("/");
+        System.out.print("/");
         a.setDen(entrada.nextInt());
         System.out.println("Ingresa el numerador y denominador de b");
         b.setNum(entrada.nextInt());
-        System.out.println("/");
+        System.out.print("/");
         b.setDen(entrada.nextInt());
         res.setNum(a.getNum()*b.getNum());
         res.setDen(a.getDen()*b.getDen());
@@ -94,11 +94,11 @@ public class Racionales implements Calculadora {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingresa el numerador y denominador de a");
         a.setNum(entrada.nextInt());
-        System.out.println("/");
+        System.out.print("/");
         a.setDen(entrada.nextInt());
         System.out.println("Ingresa el numerador y denominador de b");
         b.setNum(entrada.nextInt());
-        System.out.println("/");
+        System.out.print("/");
         b.setDen(entrada.nextInt());
         res.setNum(a.getNum()*b.getDen());
         res.setDen(a.getDen()*b.getNum());
